@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: 
+    rgb(201, 206, 130);
+}
+
+h1{
+    color:rgb(9, 13, 66)
+}
+
+p{
+    text-decoration:solid;
+}
+
+a{
+    text-decoration: none; 
+    background-color: darkgoldenrod; 
+    color: ivory; 
+    display: inline-block; 
+    padding: 10px  30px;
+    border-radius: 35px;
+}
+
+.ball{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: darkred;
+    border: 3px solid black
+}
+
+.text-important{
+    font-size: 2rem;
+    background-color: yellow;
+    font-style: oblique;
+}
+
+#tituloweb{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
