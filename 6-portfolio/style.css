@@ -74,6 +74,7 @@ header{
     position: relative;
     /* background-color: rgb(73,19,123); */
     flex: 1;
+    overflow: hidden;
 }
 
 .img-pizza, .img-hoja, .img-tomato{
@@ -201,5 +202,50 @@ header{
     cursor: pointer;
 }
 
+/* Primer Breakpoint tablet*/
 
+@media screen and (max-width: 992px){
+    body{
+       /*  background-color: tomato; */
+    }
+    .welcome-content{
+        flex-direction: column-reverse;
+    }
+    .col-2{
+        /* background-color: rgb(73, 19, 123) !important; */
+        flex: none;
+        height: 300px;
+    }
+
+    .img-pizza, .img-hoja, .img-tomato{
+        width: 230px;
+    }
+
+    .productos-content{
+        flex-wrap: wrap;
+    }
+
+    .productos-card{
+        flex: none;
+        width: 49%;;
+    }
+
+
+}
+
+/* Segundo Breakpoint mobile*/
+
+@media screen and (max-width: 576px){
+    body{
+        /* background-color: blueviolet; */
+    }
+
+    .productos-card{
+        flex: none;
+        width: 85%;
+        margin: auto;
+    }
+
+
+}
 
