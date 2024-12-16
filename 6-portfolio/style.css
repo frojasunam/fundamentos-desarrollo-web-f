@@ -202,9 +202,21 @@ header{
     cursor: pointer;
 }
 
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.skills-content > div{
+    display: grid;
+    row-gap: 10px;
+}
+
 /* Primer Breakpoint tablet*/
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 800px){
     body{
        /*  background-color: tomato; */
     }
@@ -221,13 +233,20 @@ header{
         width: 230px;
     }
 
-    .productos-content{
+    /* .productos-content{
         flex-wrap: wrap;
     }
 
     .productos-card{
         flex: none;
         width: 49%;;
+    } */
+
+    .skills-content{
+        /* display: grid; */
+        grid-template-columns: repeat(2,1fr);
+        /* gap: 30px; */
+        /* padding: 30px; */
     }
 
 
@@ -240,12 +259,27 @@ header{
         /* background-color: blueviolet; */
     }
 
-    .productos-card{
-        flex: none;
-        width: 85%;
-        margin: auto;
+    .productos-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
+   /*  .productos-card{
+        flex: none;
+        width: 80%;
+        margin: auto;
+    } */
+
+    .skills-content{
+        /* display: grid; */
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 30px; */
+        /* padding: 30px; */
+    }
+
+    .skills-content > div{
+        text-align: center;
+    }
 
 }
 
